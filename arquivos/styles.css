@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0px;
+    background-color: #1E252B;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+}
+
+
+header > a{
+    text-decoration: none;
+    font-size: 16px;
+    color:#7E95AA;
+    font-family: 'Inter', sans-serif;
+}
+
+header > a:hover {
+    cursor: pointer;
+    color: purple;
+    transform: scale(1.05);
+    transition: transform 200ms ease;
+}
+
+
+header > button {
+    position: absolute;
+    right: 5%;
+    border: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    background-color: purple;
+    color: #fcfcfc;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+
+header > button > a {
+    text-decoration: none;
+    color: #fcfcfc;
+    
+}
+
+header > button > a:hover {
+    color: blueviolet;
+    font-size: larger;
+    transition: font-size 0.5s;
+    
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    justify-content: space-around;
+}
+
+.home__cargo{
+    color:#748FB5;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+}
+
+.home__nome{
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.home__bio{
+    color: #7E95AA;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+.home__botoes {
+    display: flex;
+    gap: 1.5rem;    
+}
+
+.home__botoes > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    gap: 15px;
+    padding: 1rem;
+    font-family: 'Poppins', sans-serif;
+      
+}
+
+.home_botoes_1 {
+    border: 0;
+    padding: 1.2rem 1.5rem;
+    border-radius: 8px;
+    background-color: purple;
+    color: #fcfcfc;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.home_botoes_2 {
+    border: 2px solid;
+    padding: 1px 1.5rem;
+    border-radius: 8px;
+    background-color: #1E252B;
+    color: #fcfcfc;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.home_botoes2_img {
+    margin: 0;
+    width: 1rem;
+    height: 1rem;
+    
+}
+
+.home__img {
+    position: relative;
+}
+
+.home_img_perfil {
+    width:350px;
+    height: 350px;
+    border-radius:50%;
+    margin-right: 7rem;
+}
+
+.home_img_box1 {
+    position: absolute;
+    top: 30%;
+    right: 85%;
+    width: 16rem;
+}
+
+.home_img_box2 {
+    position: absolute;
+    top: 55%;
+    left: 60%;
+    width: 15rem;
+    height: 7rem;
+}
+
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.habilidades__titulo {
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.habilidades__texto {
+    color: #7E95AA;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+}
+
+#contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+}
+
+#contato > h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: white;
+    position:absolute;
+    left: 15%;
+}
+
+#contato > p {
+    color: #7E95AA;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    position:absolute;
+    top: 100%;
+    left: 15%;
+}
+
+#contato > p > a {
+    text-decoration: none;
+    color: blueviolet;
+    transition: color 0.5s
+}
+
+#contato > p > a:hover {
+    text-decoration: none;
+    color: blue;
+    font-size: larger;
+    transition: font-size 0.5s;
+}
+
+hr {
+    opacity: 30%;
+    width: 100%;
+    border: 3px solid #7E95AA;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem;
+}
+
+.footer > p {
+    color: #7E95AA;
+    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    position: absolute;
+    left: 15%;
+    color: #7E95AA;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer > img {
+    width: 96px;
+    height: 16px;
+    position: absolute;
+    right: 15%;
+}
+
+@media screen and (max-width: 1200px) {
+    #home{
+        flex-direction: column;
+    }
+    
+    #habilidades > img {
+        width: 80%;
+        height: auto;
+    }
+
+    .rodape > p {
+        bottom: 50%;
+    }
+
+    header > button {
+        position: fixed;
+    }
+}
